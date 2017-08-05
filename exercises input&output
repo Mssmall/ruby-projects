@@ -1,0 +1,80 @@
+#Asking user for length_in_inches -> converting to centimetres -> returning value back to user. 
+
+#inputvariable
+length = "" 
+inches_centimetres = length * 2.54 #converting inches to cm
+
+#outputvariable
+centimetres = 0
+
+#processing
+print "What is the length in inches"
+length = gets.to_i
+
+centimetres = length * 2.54
+
+puts "Oh cool, #{length} inches in length means that "\
+  "it is #{centimetres} centimetres in length"
+
+---------
+
+#Asking user for three numbers -> finding average of 3 numbers (can be decimal) -> returning value back to user. 
+val1 = "Think of one number"
+val2 = "Think of a second number"
+val3 = "Think of a third number"
+
+print val1
+val1 = gets.to_f
+print val2
+val2 = gets.to_f
+print val3
+val3 = gets.to_f
+
+average = [(val1 + val2 + val3) / 3]
+
+puts "The average of your three numbers is #{average}"
+
+-------
+
+#Asking user for number of minutes -> converting to hours -> returning value back to user.
+#output
+#number_minutes = ""
+#minutes_hours = 0 #divide value by 60
+
+#input
+#hours = 0
+
+print "How many minutes did it take you to drive to Sydney from Melbourne?"
+minutes = gets.to_f
+
+hours = minutes / 60
+
+puts "That is the equivalent to #{hours} hours."
+
+-------
+
+#Asking user for item, quantity and preferred price -> calculating total cost of items dependent on input -> returning value 
+#output
+#item_name = ""
+#price = ""
+#quantity =""
+
+#input
+#total = price * quantity
+
+item_name = "What would you like to buy today?" 
+print item_name
+item_name = gets.chomp
+
+quantity = "How many would you like?"
+print quantity
+quantity = gets.to_i
+
+price = "How much do you want to pay for each of them?"
+print price
+price = gets.to_f
+
+total = price * quantity
+
+puts "#{quantity} #{item_name} at #{price} dollars each comes to a total of" \
+  " #{total} dollars."
