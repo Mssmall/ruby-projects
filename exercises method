@@ -1,0 +1,7 @@
+#Converting pounds to kilograms
+#input = (n)
+def pound_kilo(n)
+ return n* 0.45
+end
+
+puts pound_kilo(20) #9.0
