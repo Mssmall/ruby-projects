@@ -78,3 +78,15 @@ total = price * quantity
 
 puts "#{quantity} #{item_name} at #{price} dollars each comes to a total of" \
   " #{total} dollars."
+
+----------
+#Asking use for degrees in Celsius -> converting celsius to farenheit as an integer -> returning value
+print "Enter degrees in Celsius?" 
+
+temperature = gets.to_i
+
+celsius_farenheit = temperature * 1.8 + 32
+
+celsius_farenheit.to_i
+
+print "That is #{celsius_farenheit.to_i} degrees Farenheit."
