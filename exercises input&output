@@ -36,6 +36,24 @@ puts "The average of your three numbers is #{average}"
 
 -------
 
+VERSION TWO
+#Asking user for three numbers -> finding average of 3 numbers (can be decimal) -> returning value back to user. 
+val1 = "Think of one number"
+val2 = "Think of a second number"
+val3 = "Think of a third number"
+
+print val1
+n1 = gets.to_f
+print val2
+n2 = gets.to_f
+print val3
+n3 = gets.to_f
+
+average = [(n11 + n2 + n3) / 3]
+
+--------
+
+puts "The average of your three numbers is #{average}"
 #Asking user for number of minutes -> converting to hours -> returning value back to user.
 #output
 #number_minutes = ""
@@ -94,6 +112,31 @@ print "That is #{celsius_farenheit.to_i} degrees Farenheit."
 
 ---------
 
+VERSION TWO
+#Asking user for degrees in Celsius -> converting celsius to farenheit as an integer -> returning value
+print "Enter degrees in Celsius?" 
+
+celsius = gets.to_i
+
+farenheit = celsius * 1.8 + 32
+
+print "That is #{farenheit.to_i} degrees Farenheit.
+
+-------
+
+VERSION THREE
+#Asking user for degrees in Celsius -> converting celsius to farenheit as an integer -> returning value
+print "Enter degrees in Celsius?" 
+
+celsius = gets.to_i
+
+farenheit = celsius * 1.8 + 32
+
+temperature = farenheit.to_i
+
+print "That is #{temperature} degrees Farenheit.
+
+--------
 #Converting pounds to kilograms. Focus on Method. 
 #input = (n)
 def pound_kilo(n)
