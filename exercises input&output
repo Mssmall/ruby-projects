@@ -80,6 +80,7 @@ puts "#{quantity} #{item_name} at #{price} dollars each comes to a total of" \
   " #{total} dollars."
 
 ----------
+
 #Asking user for degrees in Celsius -> converting celsius to farenheit as an integer -> returning value
 print "Enter degrees in Celsius?" 
 
