@@ -162,3 +162,21 @@ def pound_kilo(n)
 end
 
 puts pound_kilo(20) #9.0
+
+-------
+#if statements. asking user if they like football (yes/no) -> respond to user based on their answer
+def do_you_like_football(answer)
+    if answer == "yes"
+    return "please enter"
+    end
+    
+    if answer == "no"
+    return "you shall not pass"
+    end
+end
+
+puts "Do you like football?(yes or no)"
+
+answer = gets.chomp
+
+puts do_you_like_football(answer)
