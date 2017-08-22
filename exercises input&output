@@ -49,7 +49,9 @@ n2 = gets.to_f
 print val3
 n3 = gets.to_f
 
-average = [(n11 + n2 + n3) / 3]
+average = [(n1 + n2 + n3) / 3]
+
+puts "The average of your three numbers is #{average}"
 
 --------
 
@@ -97,6 +99,22 @@ total = price * quantity
 puts "#{quantity} #{item_name} at #{price} dollars each comes to a total of" \
   " #{total} dollars."
 
+-----
+
+VERSION TWO
+print "What would you like to buy today?" 
+item_name = gets.chomp
+
+print "How many would you like?"
+quantity = gets.to_i
+
+print "How much do you want to pay for each of them?"
+price = gets.to_f
+
+total = price * quantity
+
+puts "#{quantity} #{item_name} at #{price} dollars each comes to a total of" \
+  " #{total} dollars."
 ----------
 
 #Asking user for degrees in Celsius -> converting celsius to farenheit as an integer -> returning value
@@ -120,7 +138,7 @@ celsius = gets.to_i
 
 farenheit = celsius * 1.8 + 32
 
-print "That is #{farenheit.to_i} degrees Farenheit.
+print "That is #{farenheit.to_i} degrees Farenheit."
 
 -------
 
@@ -134,7 +152,7 @@ farenheit = celsius * 1.8 + 32
 
 temperature = farenheit.to_i
 
-print "That is #{temperature} degrees Farenheit.
+print "That is #{temperature} degrees Farenheit."
 
 --------
 #Converting pounds to kilograms. Focus on Method. 
