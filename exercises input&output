@@ -180,3 +180,21 @@ puts "Do you like football?(yes or no)"
 answer = gets.chomp
 
 puts do_you_like_football(answer)
+
+-------
+
+#elsif statements. asking user if they like football (yes/no/unsure), allowing for more than just yes or no -> respond to user based on their answer
+def do_you_like_football(answer)
+    if answer == "yes"
+    return "please enter"
+    elsif answer == "no"
+    return "you shall not pass"
+    else
+    return "make up your mind"
+    end
+end
+puts "do you like football?(yes, no or unsure)"
+
+answer = gets.chomp
+
+puts do_you_like_football(answer)
